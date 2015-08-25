@@ -1,0 +1,28 @@
+Name:                arg
+Version:             0.1.0
+License:             BSD3
+License-File:        LICENSE
+Author:              Shingo OKAWA
+Maintainer:          Shingo OKAWA <shingo.okawa.n.a@gmail.com>
+Category:            DSL
+Synopsis:            Haskell Argumentation Theoristic APIs for IR.
+Description:         An implementation of semantic IR library based on the argumentation
+                     theory. This implementation is demonstrative, hence the functional-
+                     ty of this library is very limited, and we do not concern with any
+                     realistic and/or business issues.
+Stability:           Experimental
+Cabal-Version:       >=1.10
+Build-Type:          Simple
+
+library
+ build-depends:
+   base        >= 4   && < 5,
+   containers  >= 0.3 && < 0.6,
+   fgl         >= 5.4.2.4,
+   cmdargs     >= 0.10.2,
+   parsec      >= 3
+
+  Exposed-modules:
+    DSL.Abstract.Api
+    DSL.Structured.Api
+    DSL.Translated.Api
